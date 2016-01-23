@@ -24,7 +24,7 @@ $ npm install
 ### 自定义配置（支持）
 * 更改 `bower` 库安装位置
 * 更改 `package.json` 项目配置信息
-* 更改 `.ignore`
+* 更改 `.gitignore`
 * 自定义扩展 `gulpfile.js`
 
 ### 安装第三方库
