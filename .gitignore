@@ -1,5 +1,7 @@
 node_modules/
-3rd/
+src/scripts/3rd/
+src/css/
 dist/
 .sass-cache/
 src/css
+3rd/

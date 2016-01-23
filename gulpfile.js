@@ -40,7 +40,7 @@ gulp.task('js', function (){
     return gulp.src('src/scripts/**/*.js')
         // 依据Filter创建文件子集，后restore
         .pipe(jsFilter)
-        .pipe(concat('bisc.js'))
+        .pipe(concat('app.js'))
         .pipe(jsFilter.restore)
         .pipe(gulp.dest('dist/scripts/'));
 });
