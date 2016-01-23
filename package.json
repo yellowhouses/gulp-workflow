@@ -1,21 +1,21 @@
 {
-  "name": "bisc2015",
+  "name": "gulp-workflow",
   "version": "1.0.0",
-  "description": "SYSU Chem BiscLab Website 2015",
+  "description": "DIY gulp-workflow by @yangfch3",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp default"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yangfch3/Bisc2015.git"
+    "url": "git+https://github.com/yangfch3/gulp-workflow.git"
   },
   "author": "yangfch3 <yangfch3@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yangfch3/Bisc2015/issues"
+    "url": "https://github.com/yangfch3/gulp-workflow/issues"
   },
-  "homepage": "https://github.com/yangfch3/Bisc2015#readme",
+  "homepage": "https://github.com/yangfch3/gulp-workflow#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
