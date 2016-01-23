@@ -47,7 +47,7 @@ $ gulp server
 $ gulp default
 ```
 
-修改浏览器链接为：`http://localhost:3000/html/` 即可预览与 `watch-act`
+修改浏览器链接为：`http://localhost:3000/html/` 即可预览与 `watch-act`，同时支持多终端同一网络环境下同于刷新预览！
 ## TODO
 
 - [ ] 支持更多 `npm run` 命令，增强自动化
@@ -61,4 +61,4 @@ $ gulp default
 ## Others
 1. 未使用 `CSS` 浏览器前缀自动补全插件，请采用sublime提供的自动补全插件代替开发
 2. 未启用 `CSS minify`，请采用sublime提供的插件压缩
-3. ...
+3. 请在 `dev` 分支上工作或在 `dev` 上新建分支工作；合并分支请切换到 `master` `gh-pages` 进行 `merge`
