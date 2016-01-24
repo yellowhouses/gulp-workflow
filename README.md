@@ -7,50 +7,48 @@
 
 ## 使用
 ### 建立仓库
-* 直接 `f**k`
-* `git clone`
+* `f**k` & `git clone`
 
 本仓库预定义三个分支：`mater` `dev` `gh-pages` 
 ### 安装模块
-* 安装 `ruby` 
+* 安装 `ruby` ，[下载链接_windows](http://rubyinstaller.org/)
 * 安装 `compass`
 ```
 $ gem install compass
 ``` 
-* 安装本地 `gulp` 模块
+* 安装本地自动化 `Node` 模块
 ```
 $ npm install
 ``` 
-### 自定义配置（支持）
-* 更改 `bower` 库安装位置
-* 更改 `package.json` 项目配置信息
-* 更改 `.gitignore`
-* 自定义扩展 `gulpfile.js`
+### 自定义配置
+* 可在 `.bowerrc` 内更改 `bower` 库安装位置及其配置信息
+* 可更改 `package.json` 内的项目配置信息
+* 可更改 `.gitignore`（注意：不同分支的 `.gitignore` 不一样）
 
 ### 安装第三方库
-使用 `bower` 进行包管理，默认安装位置 `src/3rd` ，`bower` 的使用[点我](https://www.zybuluo.com/yangfch3/note/274714)。
+使用 `bower` 进行包管理，默认安装位置 `src/3rd` ，`bower` 的使用方法[点我](https://www.zybuluo.com/yangfch3/note/274714)。
 
 ## 运行
 支持以下初始运行方式：
 
-* `npm run`
+* `npm run` 命令
 ```
 $ npm start
 // or
 $ npm run start
 ```
-* `gulp *`
+* `gulp *` 命令
 ```
 $ gulp build
 $ gulp server
-// or simple
+// or more simpled
 $ gulp default
 ```
 
-修改浏览器链接为：`http://localhost:3000/html/` 即可预览与 `watch-act`，同时支持多终端同一网络环境下同于刷新预览！
+`browser-Sync` 自动打开 `html` 文件夹的入口文件，修改浏览器链接为：`http://[localhost--->YourIP]:3000/html/` ，生成二维码（使用 `chrome` 相关插件 ）即可多终端预览与 `watch-act`，使用 `sublime` 的 `auto-save` 插件实现自动保存，多终端能实现同步地自动刷新！Amazing！ 
 ## TODO
 
-- [ ] 支持更多 `npm run` 命令，增强自动化
+- [ ] 支持更多 `npm run` 命令，增强自动化，例如实现一键提交
 - [ ] 增添更多 `gulp` 插件，实现更多功能
     - [ ] md5 tag support
     - [ ] ...
@@ -59,6 +57,6 @@ $ gulp default
 - [ ] waiting more...
 
 ## Others
-1. 未使用 `CSS` 浏览器前缀自动补全插件，请采用sublime提供的自动补全插件代替开发
+1. 本工作流未使用 `CSS3` 浏览器前缀自动补全 `package` ，请采用sublime提供的自动补全插件代替开发
 2. 未启用 `CSS minify`，请采用sublime提供的插件压缩
-3. 请在 `dev` 分支上工作或在 `dev` 上新建分支工作；合并分支请切换到 `master` `gh-pages` 进行 `merge`
+3. 请在 `dev` 分支上工作或在 `dev` 上新建分支工作；只有在合并分支时切换到 `master` `gh-pages` 进行 `merge`.
