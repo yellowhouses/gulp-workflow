@@ -44,8 +44,20 @@ $ gulp server
 // or more simpled
 $ gulp default
 ```
+* 自动 `commit`
+```
+npm run commit
+```
+然后按照提示输入你的 `commit message`，即可自动提交
+* 自动 `push` ：请在确认无分支冲突的情况下使用！！！
+```
+npm rum push
+```
 
-`browser-Sync` 自动打开 `html` 文件夹的入口文件，修改浏览器链接为：`http://[localhost--->YourIP]:3000/html/` ，生成二维码（使用 `chrome` 相关插件 ）即可多终端预览与 `watch-act`，使用 `sublime` 的 `auto-save` 插件实现自动保存，多终端能实现同步地自动刷新！Amazing！ 
+
+>`browser-Sync` 自动打开 `html` 文件夹的入口文件，修改浏览器链接为：`http://[localhost--->YourIP]:3000/html/` ，生成二维码（使用 `chrome` 相关插件 ）即可多终端预览与 `watch-act`，使用 `sublime` 的 `auto-save` 插件实现自动保存，多终端能实现同步地自动刷新！Amazing！ 
+
+
 ## TODO
 
 - [ ] 支持更多 `npm run` 命令，增强自动化，例如实现一键提交
