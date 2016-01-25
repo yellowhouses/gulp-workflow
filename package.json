@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "commit": "sh ./commit.sh",
+    "push": "sh ./push.sh",
     "start": "gulp default"
   },
   "repository": {
