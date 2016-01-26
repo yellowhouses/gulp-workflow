@@ -6,6 +6,7 @@
   "scripts": {
     "commit": "sh ./commit.sh",
     "push": "sh ./push.sh",
+    "push-master": "sh push-master.sh",
     "start": "gulp default"
   },
   "repository": {
