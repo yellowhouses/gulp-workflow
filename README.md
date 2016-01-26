@@ -52,6 +52,12 @@ npm run commit
 * 自动 `push` ：请在确认无分支冲突的情况下使用！！！
 ```
 npm rum push
+# （只 push dev分支和 gh-pages 分支的更新）
+```
+push master 分支
+```
+npm run push-master
+# 将两种 push 分开是为了保持 master 的稳定
 ```
 
 
@@ -60,7 +66,7 @@ npm rum push
 
 ## TODO
 
-- [ ] 支持更多 `npm run` 命令，增强自动化，例如实现一键提交
+- [x] 支持更多 `npm run` 命令，增强自动化，例如实现一键提交
 - [ ] 增添更多 `gulp` 插件，实现更多功能
     - [ ] md5 tag support
     - [ ] ...
@@ -69,6 +75,7 @@ npm rum push
 - [ ] waiting more...
 
 ## Others
-1. 本工作流未使用 `CSS3` 浏览器前缀自动补全 `package` ，请采用sublime提供的自动补全插件代替开发
-2. 未启用 `CSS minify`，请采用sublime提供的插件压缩
-3. 请在 `dev` 分支上工作或在 `dev` 上新建分支工作；只有在合并分支时切换到 `master` `gh-pages` 进行 `merge`.
+1. 本工作流未使用 `CSS3` 浏览器前缀自动补全 `package` ，请采用sublime提供的自动补全插件代替开发；
+2. 未启用 `CSS minify`，请采用 sublime 提供的插件压缩；
+3. 推荐搭配我的 sublime 配置一起使用
+4. 请在 `dev` 分支上工作或在 `dev` 上新建分支工作；自动化任务已经包含了 merge、push 和 checkout 任务，无需手动操作。
