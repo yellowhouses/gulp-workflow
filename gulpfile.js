@@ -65,14 +65,14 @@ gulp.task('html',['css','js'],function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src(['src/images/**/*'])
+  return gulp.src(['src/img/**/*'])
     .pipe(imagemin({
             optimizationLevel: 4,
             progressive: true,
             interlaced: true,
             multipass: true
         }))
-    .pipe(gulp.dest('dist/images/'))
+    .pipe(gulp.dest('dist/img/'))
     .pipe(notify({message: 'Images task completed'}));
 });
 
