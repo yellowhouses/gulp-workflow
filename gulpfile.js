@@ -36,13 +36,21 @@ gulp.task('css', function() {
 
 // concat js and move 3rd
 gulp.task('js', function (){
-    var jsFilter = filter('src/scripts/*.js', {restore: true});
-    return gulp.src('src/scripts/**/*.js')
+    // var jsFilter = filter('src/scripts/*.js', {restore: true});
+    return gulp.src('src/scripts/*.js')
         // 依据Filter创建文件子集，后restore
-        .pipe(jsFilter)
-        .pipe(concat('app.js'))
-        .pipe(jsFilter.restore)
+        // .pipe(jsFilter)
+        .pipe(concat('bisc.js'))
         .pipe(gulp.dest('dist/scripts/'));
+        //.pipe(jsFilter.restore)
+        //.pipe(gulp.dest('dist/scripts/'));
+});
+
+// move 3rd js
+gulp.task('move3rd', function (){
+    // var jsFilter = filter('src/scripts/*.js', {restore: true});
+    return gulp.src('src/scripts/3rd/**')
+        .pipe(gulp.dest('dist/scripts/3rd/'));
 });
 
 //html
@@ -98,13 +106,13 @@ gulp.task('reload',function(){
 
 // watch
 gulp.task('watch', function() {
-    gulp.watch('src/sass/**/*.sass', ['css','reload']);
+    gulp.watch('src/sass/**/*.scss', ['css','reload']);
     gulp.watch('src/scripts/**/*.js', ['js','reload']);
     gulp.watch('src/html/**/*.html',['html','reload']);
     gulp.watch('src/images/**/*',['images','reload']);
 });
 
 //build
-gulp.task('build',['css','js','html','images']);
+gulp.task('build',['css','js','move3rd','html','images']);
 gulp.task('default', ['browserSync','build','watch']);
 gulp.task('server',['browserSync','watch']);
