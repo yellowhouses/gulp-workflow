@@ -1,7 +1,7 @@
 {
-  "name": "gulp-workflow",
+  "name": "project_name",
   "version": "1.0.0",
-  "description": "DIY gulp-workflow by @yangfch3",
+  "description": "project_description",
   "main": "gulpfile.js",
   "scripts": {
     "commit": "sh ./commit.sh",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yangfch3/gulp-workflow.git"
+    "url": "git+https://github.com/xxx/xxx.git"
   },
-  "author": "yangfch3 <yangfch3@gmail.com>",
+  "author": "xxx <xxx@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yangfch3/gulp-workflow/issues"
+    "url": "https://github.com/xxx/xxx/issues"
   },
-  "homepage": "https://github.com/yangfch3/gulp-workflow#readme",
+  "homepage": "https://github.com/xxx/xxx#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
@@ -38,7 +38,9 @@
     "gulp-processhtml": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
-    "gulp-template": "^3.1.0"
+    "gulp-template": "^3.1.0",
+    "gulp.spritesmith": "^6.2.0",
+    "merge-stream": "^1.0.0"
   },
   "dependencies": {
     "gulp-concat": "^2.6.0"
